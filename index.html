@@ -10,110 +10,58 @@
       font-family: Arial, sans-serif;
       scroll-behavior: smooth;
     }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
+    .section {
+      min-height: 100vh;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
-      z-index: 1000;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 20px;
-    }
-
-    .contact-button {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background-color: white;
-      color: black;
-      padding: 5px 10px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-
-    section {
-      padding: 100px 20px 50px;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
-      height: 100vh;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
+      flex-direction: column;
+      padding: 40px 20px;
+      background: #fff;
     }
-
-    .hero h2 {
-      font-size: 40px;
-      margin: 0;
+    img.fullpage {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
-
-    .hero p {
-      font-size: 20px;
-    }
-
-    .about, .services, .contact {
-      background-color: #f4f4f4;
-      margin-bottom: 20px;
-    }
-
-    footer {
+    .contact-section {
+      background: #f8f9fa;
       text-align: center;
-      padding: 20px;
-      background-color: #333;
+    }
+    .contact-section h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .contact-section p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .contact-section a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #25D366;
       color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .contact-section a.button:hover {
+      background: #1ebe5b;
     }
   </style>
 </head>
 <body>
+  <!-- Poster Image Section -->
+  <div class="section">
+    <img src="WEBSITEE.png" alt="Atitheyata Website" class="fullpage" />
+  </div>
 
-  <header>
-    <a href="tel:+916289938409" class="contact-button" target="_blank">Contact</a>
-    <h1>Atitheyata Tours and Travels</h1>
-  </header>
-
-  <section class="hero">
-    <h2>Welcome to Atitheyata</h2>
-    <p>Your Trusted Travel Partner</p>
-  </section>
-
-  <section class="about">
-    <h2>About Us</h2>
-    <p>We offer curated tour packages across beautiful locations in India. Your comfort and joy is our priority.</p>
-  </section>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Custom Travel Packages</li>
-      <li>Homestays and Hotel Bookings</li>
-      <li>Transport Arrangements</li>
-      <li>Guided Tours</li>
-    </ul>
-  </section>
-
-  <section class="contact">
-    <h2>Get in Touch</h2>
-    <p>Phone: +91 6289938409</p>
-    <p>Email: contact@atitheyata.in</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Atitheyata Tours and Travels. All rights reserved.</p>
-  </footer>
-
+  <!-- Contact Section -->
+  <div class="section contact-section">
+    <h2>Contact Us</h2>
+    <p>Call or WhatsApp: +91 6289938409</p>
+    <a class="button" href="https://wa.me/916289938409" target="_blank">Message on WhatsApp</a>
+  </div>
 </body>
 </html>
