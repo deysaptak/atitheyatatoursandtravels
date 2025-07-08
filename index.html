@@ -8,60 +8,36 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
     }
-    .section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 40px 20px;
-      background: #fff;
-    }
-    img.fullpage {
-      max-width: 100%;
-      height: auto;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
-    .contact-section {
-      background: #f8f9fa;
-      text-align: center;
-    }
-    .contact-section h2 {
-      margin-bottom: 10px;
-      font-size: 28px;
-    }
-    .contact-section p {
-      margin-bottom: 20px;
-      font-size: 18px;
-    }
-    .contact-section a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #25D366;
+    .contact-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #3498db;
       color: white;
-      text-decoration: none;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
       border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
-    .contact-section a.button:hover {
-      background: #1ebe5b;
+    .contact-button:hover {
+      background-color: #2980b9;
+    }
+    .full-page-img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <!-- Poster Image Section -->
-  <div class="section">
-    <img src="WEBSITEE.png" alt="Atitheyata Website" class="fullpage" />
-  </div>
-
-  <!-- Contact Section -->
-  <div class="section contact-section">
-    <h2>Contact Us</h2>
-    <p>Call or WhatsApp: +91 6289938409</p>
-    <a class="button" href="https://wa.me/916289938409" target="_blank">Message on WhatsApp</a>
-  </div>
+  <a href="tel:+916289938409" target="_blank">
+    <button class="contact-button">Contact</button>
+  </a>
+  <img src="WEBSITEE.png" alt="Atitheyata Website" class="full-page-img" />
 </body>
 </html>
