@@ -5,98 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Atitheyata Tours and Travels</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
     }
 
     .contact-button {
       position: fixed;
       top: 20px;
       left: 20px;
-      background-color: #007bff;
+      z-index: 999;
+      background-color: #2196F3;
       color: white;
       padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
       text-decoration: none;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      z-index: 1000;
     }
 
-    .section {
+    .image-section {
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
+      width: 100%;
+      overflow-y: scroll;
     }
 
-    .hero {
-      background: url('WEBSITEE.png') no-repeat center center / cover;
-      color: white;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .about {
-      background-color: #f8f8f8;
-      color: #333;
-    }
-
-    .about p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      padding: 20px;
-    }
-
-    .contact {
-      background-color: #eee;
-      color: #222;
-    }
-
-    .contact p {
-      font-size: 1.1rem;
+    .image-section img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <!-- Fixed contact button -->
-  <a href="tel:+916289938409" class="contact-button" target="_blank">Contact</a>
+  <!-- Contact Button -->
+  <a href="https://wa.me/916289938409" target="_blank" class="contact-button">Contact</a>
 
-  <!-- Hero Section -->
-  <div class="section hero">
-    <h1>Welcome to Atitheyata Tours & Travels</h1>
-  </div>
-
-  <!-- About Section -->
-  <div class="section about">
-    <h2>Explore Lamahatta, Darjeeling</h2>
-    <p>
-      Discover breathtaking views, peaceful nature, and cozy stays. Our homestay offers you warmth, care, and the best of Darjeeling’s beauty.
-    </p>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="section contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>📞 +91 62899 38409</p>
-    <p>✉️ contact@atitheyata.com</p>
+  <!-- Scrolling Image Section -->
+  <div class="image-section">
+    <img src="WEBSITEE.png" alt="Atitheyata Website Image" />
   </div>
 
 </body>
