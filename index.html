@@ -34,10 +34,11 @@
     }
 
     .section {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
     }
 
     .hero {
@@ -49,23 +50,38 @@
 
     .contact-section {
       background-color: #f4f4f4;
-      padding: 50px;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .extra-section {
+      background-color: #ddd;
+      padding: 100px 20px;
       text-align: center;
     }
   </style>
 </head>
 <body>
 
+  <!-- CONTACT BUTTON -->
   <a class="contact-button" href="tel:+916289938409" target="_blank">Contact</a>
 
+  <!-- HERO SECTION -->
   <div class="section hero">
     Welcome to Atitheyata Tours & Travels
   </div>
 
+  <!-- EXTRA SECTION TO ENABLE SCROLLING -->
+  <div class="section extra-section">
+    <h2>Explore Lamahatta, Darjeeling</h2>
+    <p>Peaceful, beautiful, and perfect for your next trip!</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
   <div class="section contact-section" id="contact">
     <h2>Contact Us</h2>
-    <p>Phone: +91 6289938409</p>
-    <p>Email: contact@atitheyata.com</p>
+    <p>📞 +91 6289938409</p>
+    <p>✉️ contact@atitheyata.com</p>
   </div>
 
 </body>
